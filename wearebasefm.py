@@ -33,7 +33,7 @@ class Twadio:
 		self.shorten_url = 'https://www.googleapis.com/urlshortener/v1/url'
 		
 		self.build_url()		
-		self.db = MySQLdb.connect(host='127.0.0.1', user='root', passwd='', db='wearebasefm')
+		self.db = MySQLdb.connect(host=SQL_HOST, user=SQL_USER, passwd=SQL_PASS, db=SQL_DB)
 		self.cursor = self.db.cursor()
 		self.get_last_track()
 		
