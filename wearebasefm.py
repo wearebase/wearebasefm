@@ -108,9 +108,6 @@ class Twadio:
 		auth.set_access_token(FM_ACCESS_KEY, FM_ACCESS_SECRET)
 		api = tweepy.API(auth)
 		api.update_status(message)
-		
-		print 'Tweeted: %s' % message
-		sys.exit()
 	
 	def run(self):
 		tracks = {}
