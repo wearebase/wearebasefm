@@ -29,8 +29,8 @@ class Twadio:
 		self.format = '"%s" by %s - %s %s'
 		self.tags = ['nowplaying', 'basefm']
 		
-		self.shorten_key = 'AIzaSyCPKCU-GITx70O3Lw9jZB7nPsjU-J6CgFg'
-		self.shorten_url = 'https://www.googleapis.com/urlshortener/v1/url'
+		self.shorten_key = SHORTEN_KEY
+		self.shorten_url = SHORTEN_URL
 		
 		self.build_url()		
 		self.db = MySQLdb.connect(host=SQL_HOST, user=SQL_USER, passwd=SQL_PASS, db=SQL_DB)
